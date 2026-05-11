@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+   <title>Antonella Nuñez-Reyes Portfolio</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Alice', serif;
+  background-color: #F6F3EC;
+  color: #36302A;
+}
+
+.topnav {
+  background-color: #ECE4DA;
+  padding: 10px 20px;
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 1px solid #B9A590;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  height: 32px;
+  vertical-align: middle;
+}
+
+.topnav a {
+  float: right;
+  color: #36302A;
+  text-decoration: none;
+  padding: 6px 10px;
+  margin-top: 0px;
+  font-size: 14px;
+  
+}
+
+.topnav a:hover {
+  background-color: #F6F3EC;
+}
+
+.hero {
+  padding: 80px 40px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.hero h2 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  line-height: 1.4;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: #36302A;
+  color: #FFFFFF;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 25px auto 0 auto;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #574C3F;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background-color: #B9A590;
+  margin: 40px auto;
+}
+
+.statement {
+  background-color: #ECE4DA;
+  padding: 60px 40px;
+  text-align: center;
+  border-top: 1px solid #B9A590;
+  border-bottom: 1px solid #B9A590;
+}
+
+.statement h2 {
+  font-size: 36px;
+}
+
+.statement p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.philosophy-title {
+  text-align: center;
+  font-size: 48px;   
+  margin-bottom: 30px;
+}
+
+.about-philosophy h2 {
+  font-size: 24px;
+  color: #574C3F;
+  margin-top: 20px;
+}
+
+.about-philosophy p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.work-title {
+  text-align: center;
+  font-size: 48px;  
+  margin-bottom: 40px;
+}
+
+.work-card {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.work-card img {
+  width: 100%;
+  max-width: 280px;
+  height: 220px;
+  border-radius: 25px;
+}
+
+.work-card h3 {
+  font-size: 24px;
+}
+
+.work-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.clear {
+  clear: both;
+}
+
+.project {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #ECE4DA;
+  border-radius: 25px;
+}
+
+.project-text {
+  float: left;
+  width: 45%;
+  padding: 40px;
+}
+
+.project-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.project-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  border: 1px solid #36302A;
+  padding: 10px 18px;
+  display: inline-block;
+  color: #36302A;
+}
+
+.project-link:hover {
+  background-color: #36302A;
+  color: #FFFFFF;
+}
+
+.project-image {
+  float: right;
+  width: 55%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.project::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #ECE4DA;
+  padding: 30px 20px 20px 20px;
+  text-align: center;
+  border-top: 1px solid #B9A590;
+}
+.footer img {
+  height: 80px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.footer p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #574C3F;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.jpg" alt="Home">
+    </a>
+  </div>
+
+  <div>
+    <a href="associations.html">Associations</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="row">
+    <div class="column hero-text">
+      <h2>Hi, I'm Antonella</h2>
+
+      <p>
+        I design accessible, research-driven digital experiences that translate human behavior into thoughtful, scalable solutions.
+      </p>
+
+      <a class="button" href="about.html">Learn More About Me</a>
+    </div>
+
+    <div class="column">
+      <img src="antonella.jpg" alt="Antonella Photo">
+    </div>
+
+  </div>
+</div>
+<div class="divider"></div>
+
+<div class="about-philosophy">
+  <div class="row">
+
+    <div class="column">
+<img src="philosophy.jpg" alt="Curamente" width="700" height="700">
+    </div>
+
+    <div class="column philosophy-text">
+     <h1 class="philosophy-title">My Approach</h1>
+
+
+<h2>
+    “We must design for the way people behave, not for how we would wish them to behave.”
+  </h2>
+
+  <p>— Jakob Nielsen</p>
+
+<h2>Accessible</h2>
+<p>Accessibility is not an afterthought in my process. I design with diverse user needs in mind from the beginning, creating experiences that are inclusive, intuitive, and usable across a wide range of abilities.</p>
+
+<h2>Iterative</h2>
+<p>Great design evolves through testing and refinement. I move from sketches to prototypes to polished designs, using feedback at each stage to continuously improve usability and impact.</p>
+  
+<h2>Research-Driven</h2>
+<p>Every design decision is informed by evidence. From usability testing and interviews to heuristic evaluations, I rely on research to guide choices and create solutions that are intuitive, accessible, and effective.</p>
+
+  </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+<div class="work">
+
+  <div class="work-header">
+  <h2 class="work-title">Latest Work</h2>
+</div>
+
+  <div class="work-card">
+    <img src="communitylens.jpg" alt="Community Lens project screenshot">
+    <h3>Community Lens</h3>
+    <p>Accessibility-focused platform helping users evaluate public spaces.</p>
+    <a href="projects.html" class="project-link">Read Case Study</a>
+  </div>
+
+  <div class="work-card">
+    <img src="pandemic.jpg" alt="Cooperative board game project">
+    <h3>Playing to Collaborate: Cooperative Board Games a Tool for Workplace Team Training</h3>
+    <p>Cooperative board games as tools for workplace team training.</p>
+    <a href="projects.html" class="project-link">Read Case Study</a>
+  </div>
+
+  <div class="work-card">
+    <img src="pawpass.jpg" alt="PawPass project screenshot">
+    <h3>PawPass</h3>
+    <p>UX research and product design for pet owners.</p>
+    <a href="projects.html" class="project-link">Read Case Study</a>
+  </div>
+
+  <div class="clear"></div>
+
+  <a href="projects.html" class="button">View More Work</a>
+</div>
+<div class="divider"></div>
+
+<div class="footer">
+  <img src="logo1.jpg" alt="Antonella Logo">
+  <p>
+    &copy; 2026 Antonella Nu&#241;ez-Reyes |
+    <a href="https://www.linkedin.com/in/antonella-nuñez-reyes-b74b5115a" target="_blank">LinkedIn</a> |
+    <a href="mailto:anunezreyes97@gmail.com">Email Me</a>
+  </p>
+</div>
+</body>
+</html>
