@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Accessible Philly - Home</title>
+      <style>
+         body {
+         margin: 0;
+         font-family: 'Inter', sans-serif;
+         font-size: 16px;
+         background-color: #F2F3F4;
+         color: #D2D3D4;
+         }
+         .topnav {
+         background-color: #1A5276;
+         padding: 10px 30px;
+         height: 65px;
+         line-height: 65px;
+         border-bottom: 4px solid #2E86C1;
+         overflow: hidden;
+         }
+         .topnav a {
+         float: right;
+         color: #FFFFFF;
+         text-decoration: none;
+         padding: 6px 12px;
+         font-size: 16px;
+         font-weight: 600;
+         }
+         .topnav a:hover {
+         color: #d2d3d4;
+         }
+         .logo {
+         float: left;
+         padding: 6px 12px;
+         font-size: 16px;
+         font-weight: 600;
+         }
+         .logo img {
+         height: 40px;
+         vertical-align: middle;
+         }
+         .welcome {
+         background-image: url("philly.png");
+         background-size: cover;
+         background-position: center;
+         height: 80vh;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .welcome-text h1 {
+         color: #FFFFFF;
+         font-size: 72px;
+         margin-bottom: 20px;
+         }
+         .welcome-text h2{
+         color: #FFFFFF;
+         font-size: 32px;
+         max-width: 700px;
+         margin: auto;
+         line-height: 1.5;
+         }
+         .mission-text {
+         text-align: center;
+         max-width: 1000px;
+         margin: auto;
+         }
+         .mission-text h2 {
+         color: #1A5276;
+         font-size: 32px;
+         margin-bottom: 25px;
+         }
+         .mission-text p {
+         color: #1A5276;
+         font-size: 16px;
+         line-height: 1.7;
+         }
+         .accessibility {
+         text-align: center;
+         margin-bottom: 40px;
+         }
+         .accessibility h2 {
+         color: #1A5276;
+         font-size: 32px;
+         margin-bottom: 10px;
+         }
+         .accessibility p {
+         color: #1A5276;
+         font-size: 16px;
+         margin-bottom: 30px;
+         }
+         .tag-container {
+         display: flex;
+         justify-content: center;
+         gap: 45px;
+         flex-wrap: wrap;
+         }
+         .tag {
+         width: 150px;
+         text-align: center;
+         }
+         .tag img {
+         height: 85px;
+         margin-bottom: 15px;
+         }
+         .tag h3 {
+         color: #1A5276;
+         font-size: 22px;
+         margin-bottom: 8px;
+         }
+         .tag p {
+         color: #1A5276;
+         font-size: 16px;
+         line-height: 1.4;
+         }
+         .featured {
+         margin-bottom: 32px;
+         text-align: center;
+         }
+         .featured h2 {
+         color: #1A5276;
+         font-size: 32px;
+         margin-bottom: 25px;
+         }
+         .card-container {
+         display: flex;
+         justify-content: center;
+         gap: 30px;
+         flex-wrap: wrap;
+         }
+         .card {
+         background-color: #FFFFFF;
+         width: 350px;
+         border-radius: 12px;
+         overflow: hidden;
+         box-shadow: #d2d3d4;
+         text-align: left;
+         }
+         .card img {
+         width: 100%;
+         height: 230px;
+         object-fit: cover;
+         }
+         .card-text {
+         padding: 25px;
+         }
+         .card-text p {
+   color: #1A5276;
+   font-size: 16px;
+   line-height: 1.7;
+}
+
+         .card-text h3 a {
+   color: #1A5276;
+   text-decoration: none;
+}
+
+.card-text h3 a:visited {
+   color: #1A5276;
+}
+
+.card-text h3 a:hover {
+   color: #1A5276;
+}
+.card:hover h3 a {
+   color: #D2D3D4;
+}
+.learn-more {
+  display: block;
+  width: fit-content;
+  margin: 15px auto 0 auto;
+  padding: 10px 18px;
+  background-color: #1A5276;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.learn-more:hover {
+  background-color: #2E86C1;
+  color: #FFFFFF;
+}
+         .divider {
+         width: 60px;
+         height: 1px;
+         background-color: #D2D3D4;
+         margin: 40px auto;
+         }
+         .footer {
+         background-color: #1A5276;
+         padding: 50px 20px;
+         text-align: center;
+         border-top: 4px solid #2E86C1;
+         }
+         .footer img {
+         height: 70px;
+         }
+         .footer p {
+         color: #FFFFFF;
+         max-width: 900px;
+         margin: auto;
+         font-size: 12px;
+         line-height: 1.8;
+         }
+         .footer a {
+         color: #D2D3D4;
+         text-decoration: none;
+         }
+      </style>
+   </head>
+   <div class="topnav">
+      <div class="logo">
+         <a href="index.html">
+         <img src="logo.png" alt="Accessible Philly Home">
+         </a>
+      </div>
+      <a href="tips.html">Tips & FAQs</a>
+      <a href="transportation.html">Transportation</a>
+      <a href="nightlife.html">Night Life</a>
+      <a href="neighborhoods.html">Neighborhoods</a>
+      <a href="dining.html">Dining</a>
+      <a href="museums.html">Museums</a>
+      <a href="attractions.html">Attractions</a>
+   </div>
+   <div class="welcome">
+      <div class="welcome-text">
+         <h1>Welcome to Accessible Philly</h1>
+         <h2>Accessibility-focused travel guide for exploring Philadelphia with confidence.</h2>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="mission-text">
+      <h2>Our Mission</h2>
+      <p>
+         Philadelphia is a city built on history, culture, and community. From historic landmarks and museums to markets, neighborhoods, and nightlife, there is something to experience in every part of the city. Accessible Philly helps wheelchair users and accessibility-conscious travelers explore the city with greater confidence through reliable accessibility information.
+      </p>
+   </div>
+   <div class="divider"></div>
+   <div class="accessibility">
+      <h2>Accessibility Tags</h2>
+      <p>Quick accessibility details to help you navigate the city with confidence.</p>
+      <div class="tag-container">
+         <div class="tag">
+            <img src="restroom.png" alt="Restroom icon">
+            <h3>Restrooms</h3>
+            <p>Accessible restroom information.</p>
+         </div>
+         <div class="tag">
+            <img src="parking.png" alt="Parking icon">
+            <h3>Parking</h3>
+            <p>Nearby accessible parking options.</p>
+         </div>
+         <div class="tag">
+            <img src="pathway.png" alt="Pathway icon">
+            <h3>Pathways</h3>
+            <p>Routes, sidewalks, and paths.</p>
+         </div>
+         <div class="tag">
+            <img src="elevator.png" alt="Elevator icon">
+            <h3>Elevators</h3>
+            <p>Elevator access when available.</p>
+         </div>
+         <div class="tag">
+            <img src="seating.png" alt="Seating icon">
+            <h3>Seating</h3>
+            <p>Places to sit and rest.</p>
+         </div>
+         <div class="tag">
+            <img src="people.png" alt="Crowd levels icon">
+            <h3>Crowds</h3>
+            <p>Busy areas and limited space.</p>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="featured">
+      <h2>Featured Places</h2>
+      </p>
+      <div class="card-container">
+         <div class="card">
+            <img src="libertybell.png" alt="Liberty Bell">
+            <div class="card-text">
+             <h3>
+         <a href="https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm" target="_blank">
+            Liberty Bell
+         </a>
+      </h3>
+               <p>
+                  One of Philadelphia’s most iconic landmarks with accessibility entrances, seating areas, pathways, and nearby transportation.
+               </p>
+               <a href="attractions.html" class="learn-more">
+                   Learn More
+               </a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="brooklynbowl1.png" alt="Brooklyn Bowl Philadelphia">
+            <div class="card-text">
+                <h3>
+         <a href="https://www.brooklynbowl.com/philadelphia" target="_blank">
+            Brooklyn Bowl Philadelphia
+         </a>
+      </h3>
+               <p>
+                  A large entertainment venue with live music, bowling, food, drinks, and open indoor gathering spaces near Fishtown.
+               </p>
+               <a href="nightlife.html" class="learn-more">
+                  Learn More
+               </a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="readingterminal.png" alt="Reading Terminal Market">
+            <div class="card-text">
+                 <h3>
+         <a href="https://readingterminalmarket.org/" target="_blank">
+            Reading Terminal Market
+         </a>
+      </h3>
+               <p>
+                  Discover accessibility details for dining spaces, pathways, seating availability, and navigating one of Philadelphia’s busiest markets.
+               </p>
+               <a href="dining.html" class="learn-more">
+                  Learn More
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="footer">
+      <img src="logo1.png" alt="Accessible Philly Home">
+      <p>
+         Accessible Philly was created as part of a Drexel University Master’s course project. Information on this website is based on independent research and may change over time. Visitors are encouraged to confirm accessibility details with official venues and transportation providers before traveling.
+      </p>
+      <p><i>Go Birds!</i></p>
+   </div>
+   </div>
+   </body>
+</html>
